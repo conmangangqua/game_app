@@ -9,7 +9,7 @@
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate, max-age=0" />
   <meta http-equiv="Pragma" content="no-cache" />
   <meta http-equiv="Expires" content="0" />
-  <title>Game Center 🤝 Tranquil Mind Studio - Premium App Center</title>
+  <title>Game Center · Kho Game Casual Vui Nhộn 🎮</title>
   <link href="fonts.css" rel="stylesheet">
   <style>
     :root {
@@ -284,15 +284,128 @@
     @keyframes prodAdsAlert { 0%,100% { transform: scale(1); } 50% { transform: scale(1.05); } }
     .badge-row { display: flex !important; align-items: center !important; gap: 8px !important; flex-wrap: nowrap !important; overflow: hidden; margin-bottom: 18px; }
   </style>
+  <style>/* ================= CASUAL GAME SKIN (final override) ================= */
+    :root{
+      --gc-primary:#f97316; --gc-pink:#ec4899; --gc-yellow:#fbbf24;
+      --gc-teal:#14b8a6; --gc-purple:#8b5cf6; --gc-blue:#3b82f6;
+      --gc-ink:#3b1a08; --gc-cream:#fff8f2;
+    }
+    body{
+      font-family:'Nunito', sans-serif !important;
+      color:var(--gc-ink) !important;
+      background:
+        radial-gradient(circle at 12% 14%, rgba(251,191,36,.18), transparent 30%),
+        radial-gradient(circle at 88% 10%, rgba(236,72,153,.15), transparent 32%),
+        radial-gradient(circle at 80% 86%, rgba(139,92,246,.14), transparent 34%),
+        radial-gradient(circle at 16% 90%, rgba(20,184,166,.13), transparent 32%),
+        var(--gc-cream) !important;
+    }
+    /* play-mat dotted overlay */
+    .bg-animation{ background-color:transparent !important;
+      background-image:radial-gradient(rgba(249,115,22,.07) 1.5px, transparent 1.5px) !important;
+      background-size:26px 26px !important; }
+    .blob{ mix-blend-mode:multiply;
+      background:radial-gradient(circle, rgba(249,115,22,.20), transparent 66%) !important; }
+    .blob-2{ background:radial-gradient(circle, rgba(236,72,153,.18), transparent 66%) !important; }
+
+    /* ---- Header ---- */
+    header{ padding:64px 20px 8px !important; }
+    .gc-badge{ display:inline-flex; align-items:center; gap:8px; font-family:'Fredoka'; font-weight:600;
+      font-size:.78rem; letter-spacing:.14em; color:var(--gc-primary); background:#fff;
+      border:2px solid rgba(249,115,22,.28); padding:7px 16px; border-radius:999px;
+      box-shadow:0 4px 0 rgba(249,115,22,.16); margin-bottom:22px; }
+    .gc-badge-dot{ width:9px; height:9px; border-radius:50%; background:#22c55e;
+      box-shadow:0 0 0 4px rgba(34,197,94,.22); animation:gcPulse 1.6s infinite; }
+    @keyframes gcPulse{ 50%{ transform:scale(1.28); } }
+    header h1{ font-family:'Fredoka' !important; font-weight:700 !important; white-space:normal !important;
+      font-size:clamp(2.6rem,7.5vw,4.4rem) !important; line-height:1.02 !important; letter-spacing:-.01em !important;
+      background:linear-gradient(115deg,#f97316 0%,#ec4899 52%,#8b5cf6 100%) !important;
+      -webkit-background-clip:text !important; background-clip:text !important; -webkit-text-fill-color:transparent !important; padding:0 !important;
+      filter:drop-shadow(0 5px 12px rgba(249,115,22,.22)); }
+    header h1 .hs{ -webkit-text-fill-color:initial !important; background:none !important; filter:none;
+      display:inline-block; animation:gcWiggle 3s ease-in-out infinite; }
+    @keyframes gcWiggle{ 0%,92%,100%{ transform:rotate(0); } 94%{ transform:rotate(-18deg); } 97%{ transform:rotate(14deg); } }
+    .gc-tagline{ font-family:'Nunito'; font-weight:700; color:#a5652f; margin:16px auto 0; max-width:600px;
+      font-size:clamp(1rem,2.4vw,1.2rem); }
+
+    /* ---- Search ---- */
+    .search-wrapper{ background:#fff !important; border:2.5px solid rgba(249,115,22,.3) !important;
+      border-radius:22px !important; box-shadow:0 6px 0 rgba(249,115,22,.16) !important; backdrop-filter:none !important; }
+    .search-wrapper:focus-within{ border-color:var(--gc-primary) !important;
+      box-shadow:0 6px 0 rgba(249,115,22,.28), 0 0 0 4px rgba(249,115,22,.12) !important; }
+    .search-wrapper::before{ content:'🎯' !important; }
+    .search-wrapper input{ font-family:'Nunito' !important; font-weight:700 !important; color:var(--gc-ink) !important; }
+
+    /* ---- Cards (chunky toy) ---- */
+    #appContainer{ gap:34px !important; }
+    .app-card{ background:#fff !important; border:3px solid #ffe4cf !important; border-radius:28px !important;
+      padding:34px 28px !important; backdrop-filter:none !important;
+      box-shadow:0 8px 0 rgba(249,115,22,.12), 0 20px 44px -14px rgba(249,115,22,.22) !important; }
+    .app-card:hover{ transform:translateY(-8px) rotate(-.6deg) !important; border-color:var(--gc-primary) !important;
+      background:#fff !important;
+      box-shadow:0 16px 0 rgba(249,115,22,.16), 0 34px 64px -16px rgba(236,72,153,.32) !important; }
+    .app-icon-box{ width:106px !important; height:106px !important; border-radius:30px !important; padding:12px !important;
+      border:2px solid #ffd9b8; background:linear-gradient(145deg,#fff2e6,#ffe0c2) !important;
+      box-shadow:0 8px 0 rgba(249,115,22,.12) !important; }
+    .app-icon{ border-radius:22px !important; }
+    .app-card:hover .app-icon-box{ transform:translateY(-3px) rotate(-5deg) scale(1.05) !important; }
+    /* color rhythm per card */
+    #appContainer .app-card:nth-child(6n+2) .app-icon-box{ background:linear-gradient(145deg,#ffe4f1,#ffd0e6)!important; border-color:#ffb8dd; box-shadow:0 8px 0 rgba(236,72,153,.14)!important; }
+    #appContainer .app-card:nth-child(6n+3) .app-icon-box{ background:linear-gradient(145deg,#efe8ff,#ddd0ff)!important; border-color:#c9b8ff; box-shadow:0 8px 0 rgba(139,92,246,.14)!important; }
+    #appContainer .app-card:nth-child(6n+4) .app-icon-box{ background:linear-gradient(145deg,#e2f7f2,#c8efe6)!important; border-color:#a8e6d8; box-shadow:0 8px 0 rgba(20,184,166,.14)!important; }
+    #appContainer .app-card:nth-child(6n+5) .app-icon-box{ background:linear-gradient(145deg,#fef6da,#fdecb8)!important; border-color:#f7dc8a; box-shadow:0 8px 0 rgba(251,191,36,.18)!important; }
+    #appContainer .app-card:nth-child(6n+6) .app-icon-box{ background:linear-gradient(145deg,#e0edff,#c6ddff)!important; border-color:#a8c8ff; box-shadow:0 8px 0 rgba(59,130,246,.14)!important; }
+    .app-title{ font-family:'Fredoka' !important; font-weight:600 !important; color:var(--gc-ink) !important; }
+    .app-desc{ font-family:'Nunito' !important; font-weight:600 !important; color:#8a5a38 !important; }
+
+    /* ---- Buttons (game chunky) ---- */
+    .btn{ font-family:'Fredoka' !important; font-weight:600 !important; border:none !important; border-radius:16px !important;
+      overflow:visible !important; box-shadow:0 4px 0 rgba(0,0,0,.16) !important;
+      transition:transform .12s cubic-bezier(.34,1.56,.64,1), box-shadow .12s ease, filter .2s ease !important; }
+    .btn:hover{ transform:translateY(-2px) !important; filter:brightness(1.06) !important; box-shadow:0 6px 0 rgba(0,0,0,.18) !important; }
+    .btn:active{ transform:translateY(2px) !important; box-shadow:0 1px 0 rgba(0,0,0,.18) !important; }
+    .btn-live{ background:linear-gradient(135deg,#fb923c,#f97316) !important; color:#fff !important; box-shadow:0 4px 0 #c2410c !important; }
+    .btn-live:hover{ box-shadow:0 6px 0 #c2410c !important; } .btn-live:active{ box-shadow:0 1px 0 #c2410c !important; }
+    .btn-dev{ background:linear-gradient(135deg,#a78bfa,#8b5cf6) !important; color:#fff !important; box-shadow:0 4px 0 #6d28d9 !important; }
+    .btn-dev:hover{ box-shadow:0 6px 0 #6d28d9 !important; } .btn-dev:active{ box-shadow:0 1px 0 #6d28d9 !important; }
+    .btn-full{ background:linear-gradient(135deg,#2dd4bf,#14b8a6) !important; color:#fff !important; box-shadow:0 4px 0 #0f766e !important; }
+    .btn-full:hover{ background:linear-gradient(135deg,#2dd4bf,#14b8a6) !important; color:#fff !important; box-shadow:0 6px 0 #0f766e !important; } .btn-full:active{ box-shadow:0 1px 0 #0f766e !important; }
+    .btn-store{ background:linear-gradient(135deg,#4ade80,#22c55e) !important; box-shadow:0 4px 0 #15803d !important; }
+    .btn-store:hover{ box-shadow:0 6px 0 #15803d !important; } .btn-store:active{ box-shadow:0 1px 0 #15803d !important; }
+    .btn-build{ background:linear-gradient(135deg,#475569,#1e293b) !important; box-shadow:0 4px 0 #020617 !important; }
+    .btn-build:hover{ background:linear-gradient(135deg,#475569,#1e293b) !important; box-shadow:0 6px 0 #020617 !important; } .btn-build:active{ box-shadow:0 1px 0 #020617 !important; }
+
+    /* ---- Category chips (pill toy) ---- */
+    .cat-chip{ font-family:'Fredoka' !important; font-weight:500 !important; background:#fff !important;
+      border:2px solid #ffe0c2 !important; color:#a5652f !important; box-shadow:0 3px 0 rgba(249,115,22,.1) !important; }
+    .cat-chip:hover{ border-color:var(--gc-primary) !important; color:var(--gc-primary) !important;
+      transform:translateY(-2px) !important; box-shadow:0 5px 0 rgba(249,115,22,.14) !important; }
+    .cat-chip.active{ background:linear-gradient(135deg,#fb923c,#f97316) !important; color:#fff !important;
+      border-color:#f97316 !important; box-shadow:0 3px 0 #c2410c !important; }
+
+    /* ---- Footer ---- */
+    footer{ font-family:'Fredoka' !important; font-weight:500 !important; color:#a5652f !important;
+      border-top:2px dashed rgba(249,115,22,.28) !important; }
+
+    @media (prefers-reduced-motion: reduce){
+      *{ animation-duration:.001ms !important; animation-iteration-count:1 !important; }
+      .app-card:hover{ transform:none !important; }
+    }
+    @media (max-width:600px){ header{ padding-top:48px !important; } .app-card{ padding:26px 20px !important; } }
+  </style>
 </head>
 <body>
   <div class="bg-animation"><div class="blob"></div><div class="blob blob-2"></div></div>
-  <header><h1>Game Center <span class="hs">🤝</span> Tranquil Mind Studio</h1></header>
-  
-  <section class="search-section"><div class="search-wrapper"><input type="text" id="searchInput" placeholder="Search for apps..." oninput="filterApps()"></div></section>
+  <header>
+    <div class="gc-badge"><span class="gc-badge-dot"></span> ARCADE HUB</div>
+    <h1><span class="hs">🕹️</span> Game Center</h1>
+    <p class="gc-tagline">Kho game casual vui nhộn — tải &amp; chơi ngay, không chờ đợi!</p>
+  </header>
+
+  <section class="search-section"><div class="search-wrapper"><input type="text" id="searchInput" placeholder="Tìm game bạn thích..." oninput="filterApps()"></div></section>
   <div class="cat-chips" id="catChips"></div>
   <main><div id="appContainer"></div></main>
-  <footer><p>&copy; 2026 Game Center 🤝 Tranquil Mind Studio. Powered by Platinum Engine.</p></footer>
+  <footer><p>🎮 &copy; 2026 Game Center · Chơi game vui mỗi ngày. Level up! 🚀</p></footer>
   <script>
     let allApps = [];
     let selectedCategory = "";
@@ -327,7 +440,7 @@
           ? `<span class="btn-stack">${label}<span class="ver">v${v[k]}</span></span>`
           : `<span class="btn-stack">${label}</span>`;
         const card = document.createElement("article"); card.className = "app-card"; card.style.animationDelay = `${index * 0.1}s`; card.dataset.appId = app.id;
-        card.innerHTML = `<div class="app-icon-box"><img src="${app.icon || 'https://via.placeholder.com/150'}" class="app-icon" alt="${app.name}" onerror="this.src='https://ui-avatars.com/api/?name=${encodeURIComponent(app.name)}&background=7c3aed&color=fff'"></div>
+        card.innerHTML = `<div class="app-icon-box"><img src="${app.icon || 'https://via.placeholder.com/150'}" class="app-icon" alt="${app.name}" onerror="this.src='https://ui-avatars.com/api/?name=${encodeURIComponent(app.name)}&background=f97316&color=fff'"></div>
           <div class="badge-row"><span class="badge ${isIOS ? 'ios' : 'android'}"><i data-lucide="${isIOS ? 'apple' : 'smartphone'}" style="width:14px;height:14px;vertical-align:-2px;margin-right:5px"></i>${app.platform || 'Android'}</span>${app.category ? `<span class="pill-category cat-src-${app.category_source||'store'}" title="Nguồn category: ${app.category_source==='override'?'Override tay':app.category_source==='ai'?'AI phân loại':app.category_source==='gitlab'?'Fallback subgroup':'Store category'}"><i data-lucide="tag"></i>${app.category}</span>` : ''}<span class="prod-ads-badge" data-prod-ads="loading" style="display:none"></span><span class="health-badge" data-health="loading" style="display:none"></span></div>
           <h2 class="app-title">${app.name}</h2><p class="app-desc">${app.description || ''}</p>
           <div class="btn-grid">${devUrl ? `<a href="${devUrl}" class="btn btn-dev"><i class="btn-ic" data-lucide="wrench"></i>${stack('Dev Build','dev')}</a>` : ""} ${prodUrl ? `<a href="${prodUrl}" class="btn btn-live"><i class="btn-ic" data-lucide="rocket"></i>${stack('Live Build','prod')}</a>` : ""} ${aabUrl ? `<a href="${aabUrl}" class="btn btn-full"><i class="btn-ic" data-lucide="package"></i>${stack('Download AAB','aab')}</a>` : ""} ${storeUrl ? `<a href="${storeUrl}" target="_blank" rel="noopener" class="btn btn-store"><i class="btn-ic" data-lucide="shopping-bag"></i><span class="btn-stack">View on Store${app.store_version ? `<span class="ver" data-store-ver>${app.store_version}</span>` : `<span class="ver" data-store-ver style="display:none"></span>`}</span></a>` : ""}
