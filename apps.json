@@ -3,7 +3,7 @@
     {
       "id": "cubie_blast",
       "name": "Cubie Blast",
-      "icon": "https://github.com/conmangangqua/game_app/releases/download/prod/cubie_blast_icon.png",
+      "icon": "https://github.com/conmangangqua/game_app/releases/download/dev/cubie_blast_icon.png",
       "platform": "Android",
       "description": "",
       "features": [],
@@ -16,8 +16,8 @@
         "prod": "1.0.0+1"
       },
       "store": "",
-      "category": null,
-      "category_source": null,
+      "category": "Games",
+      "category_source": "store",
       "store_updated": null,
       "store_version": null
     }
