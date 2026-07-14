@@ -22,6 +22,25 @@
       "store_version": null
     },
     {
+      "id": "pufflo",
+      "name": "Pufflo",
+      "icon": "https://github.com/conmangangqua/game_app/releases/download/dev/pufflo_icon.png",
+      "platform": "Android",
+      "description": "",
+      "features": [],
+      "downloads": {
+        "dev": "https://github.com/conmangangqua/game_app/releases/download/dev/pufflo_dev.apk"
+      },
+      "versions": {
+        "dev": "1.0.0+1"
+      },
+      "store": "",
+      "category": "game",
+      "category_source": "gitlab",
+      "store_updated": null,
+      "store_version": null
+    },
+    {
       "id": "zoo_tiles",
       "name": "Zoo Tiles",
       "icon": "https://github.com/conmangangqua/game_app/releases/download/prod/zoo_tiles_icon.png",
