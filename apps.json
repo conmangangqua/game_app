@@ -24,15 +24,17 @@
     {
       "id": "gulpy",
       "name": "Gulpy",
-      "icon": "https://github.com/conmangangqua/game_app/releases/download/dev/gulpy_icon.png",
+      "icon": "https://github.com/conmangangqua/game_app/releases/download/prod/gulpy_icon.png",
       "platform": "Android",
       "description": "",
       "features": [],
       "downloads": {
-        "dev": "https://github.com/conmangangqua/game_app/releases/download/dev/gulpy_dev.apk"
+        "dev": "https://github.com/conmangangqua/game_app/releases/download/dev/gulpy_dev.apk",
+        "prod": "https://github.com/conmangangqua/game_app/releases/download/prod/gulpy_prod.apk"
       },
       "versions": {
-        "dev": "1.0.0+1"
+        "dev": "1.0.0+1",
+        "prod": "1.0.0+1"
       },
       "store": "",
       "category": "game",
