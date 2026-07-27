@@ -1,0 +1,18 @@
+{
+  "cubie_blast": {
+    "sha": "4355f15761deb1c376edfad575a331675d9766ecdf23c9463450b2596e3b7869",
+    "src": "https://github.com/conmangangqua/game_app/releases/download/prod/cubie_blast_icon.png"
+  },
+  "gulpy": {
+    "sha": "2bf77965dff0489946539bfd177d0924716ba056190fb606ce204eacfc2165e5",
+    "src": "https://github.com/conmangangqua/game_app/releases/download/prod/gulpy_icon.png"
+  },
+  "pufflo": {
+    "sha": "9cf7b8bc494f3e5491a2df4911ba34a9c6323150d962ae2ff03c9e0189d4add1",
+    "src": "https://github.com/conmangangqua/game_app/releases/download/prod/pufflo_icon.png"
+  },
+  "zoo_tiles": {
+    "sha": "fb06166387531c08f383cb22e3a2657750599a7ff3b1fb8db63ce250f62584e0",
+    "src": "https://github.com/conmangangqua/game_app/releases/download/prod/zoo_tiles_icon.png"
+  }
+}

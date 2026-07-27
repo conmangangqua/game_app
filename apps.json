@@ -3,7 +3,7 @@
     {
       "id": "cubie_blast",
       "name": "Cubie Blast",
-      "icon": "https://github.com/conmangangqua/game_app/releases/download/prod/cubie_blast_icon.png",
+      "icon": "icons/cubie_blast.webp",
       "platform": "Android",
       "description": "",
       "features": [],
@@ -24,7 +24,7 @@
     {
       "id": "gulpy",
       "name": "Gulpy",
-      "icon": "https://github.com/conmangangqua/game_app/releases/download/prod/gulpy_icon.png",
+      "icon": "icons/gulpy.webp",
       "platform": "Android",
       "description": "",
       "features": [],
@@ -45,7 +45,7 @@
     {
       "id": "pufflo",
       "name": "Pufflo",
-      "icon": "https://github.com/conmangangqua/game_app/releases/download/prod/pufflo_icon.png",
+      "icon": "icons/pufflo.webp",
       "platform": "Android",
       "description": "",
       "features": [],
@@ -66,7 +66,7 @@
     {
       "id": "zoo_tiles",
       "name": "Zoo Tiles",
-      "icon": "https://github.com/conmangangqua/game_app/releases/download/prod/zoo_tiles_icon.png",
+      "icon": "icons/zoo_tiles.webp",
       "platform": "Android",
       "description": "",
       "features": [],
