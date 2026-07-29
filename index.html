@@ -2005,7 +2005,7 @@
       ? '⚠️ Suy ra từ source thật (manifest + SDK) — vẫn là bản nháp, bạn chịu trách nhiệm soát & khai chính xác trước khi upload.'
       : '⚠️ Bản regex nhanh (chỉ dò SDK/permission) — bấm nút gen để quét source đầy đủ. Bạn chịu trách nhiệm soát dòng NEEDS_REVIEW trước khi upload.';
     body.innerHTML=head+
-      '<table><thead><tr><th>Data type</th><th>Collected</th><th>Shared</th><th>Purposes</th><th>'+(engine==="ai"?"Lý do":"Evidence")+'</th></tr></thead><tbody>'+rowsHtml+'</tbody></table>'+
+      smHtml+'<table><thead><tr><th>Data type</th><th>Thu thập</th><th>Chia sẻ</th><th>Mục đích thu thập</th><th>Mục đích chia sẻ</th><th>Người dùng tắt được?</th><th>Lý do (evidence)</th></tr></thead><tbody>'+rowsHtml+'</tbody></table>'+
       '<pre class="dscsv" id="dsCsv" style="display:none">'+esc(lastCsv)+'</pre>'+
       '<div class="note">'+noteTxt+'</div>'+actions(engine!=="ai");
     bindActions();
